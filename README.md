@@ -4,7 +4,7 @@
 [![LocalStorage](https://img.shields.io/badge/Data_Layer-LocalStorage-FF6B6B?style=for-the-badge)]()
 
 ## Demo en Vivo
-**[https://tu-usuario.github.io/ecommerce-cart-system/)](https://mbqcodes.github.io/E-commerce-Cart-System/)**
+**[https://mbqcodes.github.io/ecommerce-cart-system/)](https://mbqcodes.github.io/E-commerce-Cart-System/)**
 
 ## Descripción del Proyecto
 
