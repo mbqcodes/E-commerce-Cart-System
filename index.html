@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="logo-menu">
+            <div class="menu-toggle">
+                <button id="open-menu">
+                    <i class="fas fa-bars"></i> Categorías
+                </button>
+            </div>
+            
+            <div class="logo">
+                <h1><i class="fas fa-store"></i> TiendaPremium</h1>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-icon">
+            <button id="cart-toggle" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </button>
+        </div>
+    </div>
+
+    <aside id="side-menu" class="side-menu">
+        <div class="side-menu-header">
+            <h3>Categorías</h3>
+            <button id="close-menu" class="close-side-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="side-menu-list">
+            <li><a href="#">Ofertas del día</a></li>
+            <li><a href="#">Informática</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Consolas y Juegos</a></li>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Audio y Sonido</a></li>
+            <li><a href="#">Electrodomésticos</a></li>
+            <li><a href="#">Fotografía</a></li>
+            <li><a href="#">Hogar y Decoración</a></li>
+            <li><a href="#">Movilidad</a></li>
+        </ul>
+    </aside>
+</header>
+    
+    
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Descubre Nuestra Colección Exclusiva</h2>
+            <a href="#productos" class="btn-primary">Ver Productos</a>
+        </div>
+    </section>
+    
+    <section id="productos" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-rows" id="products-rows">
+            </div>
+        </div>
+    </section>
+    
+    <aside id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito de Compras</h3>
+            <button id="close-cart" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-content">
+            <div id="cart-items" class="cart-items">
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Impuestos (10%):</span>
+                    <span id="taxes">$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="btn-primary checkout-btn">Proceder al Pago</button>
+            </div>
+        </div>
+    </aside>
+    
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-product-details">
+            </div>
+        </div>
+    </div>
+    <section id="contacto" class="contact-grid-container">
+        <div class="contact-grid">
+            <div class="grid-1">
+                <h3>Horario de Atención</h3>
+                <p>Lunes a Viernes de 08:00 a 18:00hs</p>
+            </div>
+            <div class="grid-2">
+                <h3>Atención Telefonica</h3>
+                <p>3794123456</p>
+            </div>
+            <div class="grid-3">
+                <h3>Atencion post-venta</h3>
+                <p>postventa@tiendapremium.com</p>
+            </div>
+        </div>
+    </section>
+        
+    </div>
+    
+    <div class="brands">
+        <img src="images/brands/windows11.webp">
+        <img src="images/brands/frame-10867-1.webp">
+        <img src="images/brands/logitech-logo.webp">
+        <img src="images/brands/image-8.webp">
+        <img src="images/brands/logos-partners-asus-1-2.webp">
+    </div>
+    
+    <section class="pre-footer">
+        <div class="pre-footer-text">
+            <p><span>TiendaPremium, tu tienda online de confianza</span>
+                
+                En TiendaPremium trabajamos para ofrecerte la mejor experiencia de compra en tecnología, informática y electrónica. Somos un espacio digital pensado para ti, donde la innovación, la cercanía y la calidad son nuestra prioridad.
+                Contamos con un amplio catálogo de productos seleccionados para cubrir las necesidades de particulares, profesionales y entusiastas de la tecnología. Nuestra misión es ayudarte a encontrar siempre lo que buscas con la mejor relación calidad-precio.
+                
+                <span>Nuestros compromisos contigo:</span>
+                <ul>
+                    <li><span>Envíos rápidos y seguros.</li>
+                        <li>Garantía de satisfacción y devoluciones sencillas.</li>
+                        <li>Atención personalizada, clara y cercana.</li>
+                        <li>Productos de confianza y marcas reconocidas.</span></li>
+                    </ul>
+                    En TiendaPremium creemos que cada compra es una experiencia, y trabajamos día a día para superar tus expectativas.
+                    Bienvenido a TiendaPremium.</p>
+                </div>
+            </section>
+            
+            <footer class="site-footer">
+                <div class="footer-top">
+                    <div class="footer-column">
+                        <h4>Comprar</h4>
+                        <ul>
+                            <li><a href="#">Guía de compras</a></li>
+                            <li><a href="#">Opciones de pago</a></li>
+                            <li><a href="#">Envíos y logística</a></li>
+                            <li><a href="#">Descuentos</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Reseñas de clientes</a></li>
+                            <li><a href="#">Tarjetas regalo</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Nosotros</h4>
+                        <ul>
+                            <li><a href="#">Quiénes somos</a></li>
+                            <li><a href="#">Tiendas físicas</a></li>
+                            <li><a href="#">Marcas disponibles</a></li>
+                            <li><a href="#">Políticas y privacidad</a></li>
+                            <li><a href="#">Programa de afiliados</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                            <li><a href="#">Garantías</a></li>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                            <li><a href="#">Política de cookies</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#">Promociones</a></li>
+                            <li><a href="#">Marketplace</a></li>
+                            <li><a href="#">Reparaciones</a></li>
+                            <li><a href="#">Soporte técnico</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Redes</h4>
+                        <ul class="socials">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">YouTube</a></li>
+                            <li><a href="#">TikTok</a></li>
+                        </ul>
+                        <div class="payments">
+                            <img src="images/payments/Mastercard-logo.png"/>
+                            <img src="images/payments/Visa_Logo.png"/>
+                            <img src="images/payments/PayPal-Logo-2022.png"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2025 TiendaPremium Inc. Todos los derechos reservados. Dirección: Av. Innovación 123.</p>
+                </div>
+            </footer>
+            <script src="app.js"></script>
+        </body>
+        </html>
